@@ -11,6 +11,9 @@ This extension allows a streamer to set a keyword for a giveaway. Viewers can en
 - **Random Winner Selection:** Fairly draw a winner from all participants.
 - **Real-time Updates:** See the number of participants update in real-time.
 
+## Preview
+![alt text](/images/preview.png.png)
+
 ## Installation
 
 This is a simple browser extension and does not require any build process. To run the extension, you need to load it into your browser as an unpacked extension.
