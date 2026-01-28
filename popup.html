@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320">
+  <title>Kick Giveaway Extension</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="logo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/>
+            <path d="M12 12V3"/>
+            <path d="m8 7 4-4 4 4"/>
+            <rect x="4" y="12" width="16" height="2" rx="1"/>
+          </svg>
+        </div>
+        <span class="header-title">Kick Giveaway Extension</span>
+      </div>
+      <button class="close-btn" id="close-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Keyword Input -->
+      <div class="input-group">
+        <label for="keyword">Keyword</label>
+        <input type="text" id="keyword" value="!cash" placeholder="e.g., !giveaway">
+      </div>
+
+      <!-- Award Input -->
+      <div class="input-group">
+        <label for="award">Reward</label>
+        <input type="text" id="award" value="50e" placeholder="e.g., 1 month sub">
+      </div>
+
+      <!-- Start Button -->
+      <button class="btn-primary" id="start-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        START
+      </button>
+
+      <!-- Counter -->
+      <div class="counter">
+        <div class="counter-number" id="user-count">0</div>
+        <div class="counter-label">Registered users</div>
+      </div>
+
+      <!-- Participants List -->
+      <div class="participants-box" id="participants-box">
+        <p class="placeholder-text">Waiting for users...</p>
+      </div>
+
+      <!-- Draw Winner Button -->
+      <button class="btn-secondary" id="draw-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+          <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+          <path d="M4 22h16"/>
+          <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+          <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+          <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+        </svg>
+        GET A WINNER
+      </button>
+
+      <!-- Winner Display -->
+      <div class="winner-display" id="winner-display" style="display: none;">
+        <p class="winner-label">Winner:</p>
+        <p class="winner-name" id="winner-name"></p>
+      </div>
+
+      <!-- Reset Button -->
+      <button class="btn-reset" id="reset-btn">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+          <path d="M3 3v5h5"/>
+        </svg>
+        Reset a list
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
