@@ -47,6 +47,11 @@ This is a simple browser extension and does not require any build process. To ru
 -   JavaScript (ES6)
 -   Chrome Extension Manifest V3
 
+## Support
+
+If you find this extension helpful, consider giving it a ⭐ on GitHub!  
+Contributions and feedback are welcome.
+
 ---
 
 _This README was generated with the assistance of an AI tool._
