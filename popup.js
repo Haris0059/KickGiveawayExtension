@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   resetBtn.addEventListener('click', () => {
     chrome.storage.local.set({ giveawayState: 'idle', keyword: '', award: '', enrolledUsers: [], winner: null });
-    keywordInput.value = '!cash';
-    awardInput.value = '50e';
+    keywordInput.value = '';
+    awardInput.value = '';
     userCount.textContent = '0';
     participantsBox.innerHTML = '<p class="placeholder-text">Waiting for users...</p>';
     winnerDisplay.style.display = 'none';
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Restore popup state
   chrome.storage.local.get(['giveawayState', 'keyword', 'award', 'enrolledUsers', 'winner'], (result) => {
-    keywordInput.value = result.keyword || '!cash';
-    awardInput.value = result.award || '50e';
+    keywordInput.value = result.keyword || '';
+    awardInput.value = result.award || '';
     const users = result.enrolledUsers || [];
     userCount.textContent = users.length;
 
