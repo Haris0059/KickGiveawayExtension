@@ -12,7 +12,7 @@ This extension allows a streamer to set a keyword for a giveaway. Viewers can en
 - **Real-time Updates:** See the number of participants update in real-time.
 
 ## Preview
-![alt text](/images/preview.png.png)
+![alt text](/images/preview.png)
 
 ## Installation
 
